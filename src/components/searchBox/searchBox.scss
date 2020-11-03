@@ -1,0 +1,28 @@
+.search-box {
+    margin: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    input {
+        height: 45px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 80%;
+        padding: 4px 15px;
+        font-size: 16px;
+    }
+    button {
+        height: 45px;
+        padding: 4px 40px;
+        margin-left: 20px;
+        width: calc(20% - 20px);
+        border: 1px solid #ddd;
+        color: #fff;
+        background-color: #000;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

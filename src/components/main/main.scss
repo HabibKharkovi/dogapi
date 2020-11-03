@@ -1,0 +1,60 @@
+
+.main-body {
+    position: relative;
+    z-index: 8;
+    margin-right: 250px;
+    margin-top: 80px;
+}
+
+.collection-wrap {
+    margin: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    .close-btn {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        color: #fff;
+        z-index: 99;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .collection-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -7px;
+        margin-right: -7px;
+        .collection {
+            padding: 0 7px;
+            max-width: 25%;
+            flex: 25%;
+            margin-bottom: 30px;
+            position: relative;
+            .img-wrap {
+                height: 300px;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            img {
+                transform: scale(1);
+                transition: all 4s linear;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            h3 {
+                font-size: 18px;
+                margin: 10px 0 0;
+            }
+        }
+    }
+}
